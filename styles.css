@@ -165,3 +165,24 @@ header::after {
   height: 200px;
   z-index: -1;
 }
+
+/* Collaboration button */
+#collaborate {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#collaborate button {
+  padding: 1rem 2rem;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+}
+
+#collaborate button:hover {
+  background: #155aab;
+}
