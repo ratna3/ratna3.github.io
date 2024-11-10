@@ -8,15 +8,13 @@
   <style>
     .profile-section {
       display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      margin-right: 50px;
+      justify-content: space-between;
+      align-items: flex-start;
     }
-    .profile-section img {
+    .profile-photo {
+      max-width: 200px;
       border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      margin-right: 20px;
+      margin-left: 20px;
     }
     .social-media-links {
       margin-top: 20px;
@@ -28,7 +26,7 @@
       color: blue;
     }
     .about-me {
-      margin-top: 20px;
+      flex: 1;
     }
   </style>
 </head>
@@ -42,23 +40,26 @@
         <li><a href="fun-projects.html">Fun Projects</a></li>
       </ul>
     </nav>
-    <div class="profile-section">
-      <img src="https://ibb.co/M1cv51B" alt="Profile Photo">
-      <div>
-        <h2>Ratna Kirti</h2>
-      </div>
-    </div>
   </header>
   
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! My name is <strong>Ratna Kirti</strong>, and I am currently pursuing a Bachelor of Science in Computer Science at Knox College. Over the years, I have immersed myself in a variety of programming languages and technologies, including CUDA, Elixir, OpenMPI, Docker, SQL, Haskell, Python, C#, Java, JavaScript, HTML, and PHP. My versatility allows me to adapt to different languages seamlessly, but my true passion lies in web development.</p>
-    <p>One of my proudest achievements is developing a website for a perfumery business, <a href="https://deoexoticattarandperfume.com/" target="_blank">Deo Exotic Attar and Perfumes</a>, which supports global payments and has significantly enhanced the business's online presence.</p>
-    <p>In addition to my academic pursuits, I have gained valuable industry experience as a Server Administrator Intern at the Irrigation and Water Resources Department. This role has honed my skills in server management and provided me with a deeper understanding of the practical applications of my studies.</p>
-    <p>I am always eager to collaborate with others on innovative projects and contribute my expertise to a dynamic team. Whether it's building robust web applications, managing servers, or exploring new programming paradigms, I am committed to delivering high-quality solutions and continuously expanding my knowledge.</p>
-    <p>Thank you for visiting my website, and I look forward to the possibility of working together!</p>
+  <section id="about" class="profile-section">
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>Hello! My name is <strong>Ratna Kirti</strong>, and I am currently pursuing a Bachelor of Science in Computer Science at Knox College. Over the years, I have immersed myself in a variety of programming languages and technologies, including CUDA, Elixir, OpenMPI, Docker, SQL, Haskell, Python, C#, Java, JavaScript, HTML, and PHP. My versatility allows me to adapt to different languages seamlessly, but my true passion lies in web development.</p>
+      <p>One of my proudest achievements is developing a website for a perfumery business, <a href="https://deoexoticattarandperfume.com/" target="_blank">Deo Exotic Attar and Perfumes</a>, which supports global payments and has significantly enhanced the business's online presence.</p>
+      <p>In addition to my academic pursuits, I have gained valuable industry experience as a Server Administrator Intern at the Irrigation and Water Resources Department. This role has honed my skills in server management and provided me with a deeper understanding of the practical applications of my studies.</p>
+      <p>I am always eager to collaborate with others on innovative projects and contribute my expertise to a dynamic team. Whether it's building robust web applications, managing servers, or exploring new programming paradigms, I am committed to delivering high-quality solutions and continuously expanding my knowledge.</p>
+      <p>Thank you for visiting my website, and I look forward to the possibility of working together!</p>
+    </div>
+    <img src="https://i.ibb.co/M1cv51B/profile-photo.jpg" alt="Profile Photo" class="profile-photo">
   </section>
 
+  <div class="social-media-links">
+    <h3>My Social Media</h3>
+    <a href="https://www.linkedin.com/in/yourlinkedinname/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/yourgithubusername" target="_blank">GitHub</a>
+  </div>
+  
   <section id="projects">
     <h2>Projects</h2>
     <ul>
@@ -71,12 +72,6 @@
     <button onclick="location.href='contact.html'">Collaborate with Me</button>
   </section>
   
-  <div class="social-media-links">
-    <h3>My Social Media</h3>
-    <a href="https://www.linkedin.com/in/ratna-kirti-436b14221/?trk=PROFILE_DROP_DOWN" target="_blank">LinkedIn</a>
-    <a href="https://github.com/ratna3" target="_blank">GitHub</a>
-  </div>
-
   <footer>
     <p>&copy; 2024 Ratna Kirti. All rights reserved.</p>
   </footer>
