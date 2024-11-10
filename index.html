@@ -5,6 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ratna Kirti - Personal Website</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .profile-section {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 50px;
+    }
+    .profile-section img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-right: 20px;
+    }
+    .social-media-links {
+      margin-top: 20px;
+    }
+    .social-media-links a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: blue;
+    }
+    .about-me {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,6 +42,12 @@
         <li><a href="fun-projects.html">Fun Projects</a></li>
       </ul>
     </nav>
+    <div class="profile-section">
+      <img src="https://ibb.co/M1cv51B" alt="Profile Photo">
+      <div>
+        <h2>Ratna Kirti</h2>
+      </div>
+    </div>
   </header>
   
   <section id="about">
@@ -39,6 +71,12 @@
     <button onclick="location.href='contact.html'">Collaborate with Me</button>
   </section>
   
+  <div class="social-media-links">
+    <h3>My Social Media</h3>
+    <a href="https://www.linkedin.com/in/ratna-kirti-436b14221/?trk=PROFILE_DROP_DOWN" target="_blank">LinkedIn</a>
+    <a href="https://github.com/ratna3" target="_blank">GitHub</a>
+  </div>
+
   <footer>
     <p>&copy; 2024 Ratna Kirti. All rights reserved.</p>
   </footer>
