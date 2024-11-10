@@ -1,99 +1,141 @@
 /* Reset some default styles */
 body, h1, h2, h3, p, ul, li, a, form, label, input, textarea, button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Basic styles */
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Header styles */
-  header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  
-  header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  header nav ul li {
-    margin: 0 1rem;
-  }
-  
-  header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  header nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Section styles */
-  section {
-    padding: 2rem;
-    background: #fff;
-    margin: 2rem 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    margin-bottom: 1rem;
-  }
-  
-  .project {
-    margin-bottom: 2rem;
-  }
-  
-  /* Form styles */
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 0.5rem;
-  }
-  
-  input, textarea {
-    margin-bottom: 1rem;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 0.75rem;
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  button:hover {
-    background: #555;
-  }
-  
-  /* Footer styles */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: #fff;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+  background: linear-gradient(to right, #f0f0f0, #dfe9f3, #ffffff); /* Adding gradient background */
+}
+
+/* Header styles */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated text */
+header h1 {
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+  animation: slideIn 3s infinite alternate;
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section styles */
+section {
+  padding: 2rem;
+  background: #fff;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; /* Adding hover effect */
+}
+
+section:hover {
+  transform: translateY(-10px); /* Elevation effect */
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #1a73e8; /* Changing heading color */
+  position: relative;
+  animation: bounceIn 1s infinite alternate;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+.project {
+  margin-bottom: 2rem;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input, textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.75rem;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s; /* Smooth transition */
+}
+
+button:hover {
+  background: #155aab; /* Darker shade on hover */
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Footer animated text */
+footer p {
+  animation: slideIn 3s infinite alternate-reverse;
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
