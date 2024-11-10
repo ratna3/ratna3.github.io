@@ -5,28 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ratna Kirti - Personal Website</title>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Inline styling for additional elements -->
   <style>
     .profile-section {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      margin: 20px 0; /* Added margin for spacing */
     }
     .profile-photo {
       max-width: 200px;
       border-radius: 50%;
       margin-left: 20px;
+      border: 3px solid #1a73e8; /* Border for better visual */
     }
     .social-media-links {
       margin-top: 20px;
     }
     .social-media-links a {
-      display: block;
-      margin-bottom: 10px;
+      display: inline-block; /* Changed to inline-block for better alignment */
+      margin: 0 10px; /* Horizontal spacing */
       text-decoration: none;
-      color: blue;
+      color: #1a73e8; /* Match the theme color */
     }
     .about-me {
       flex: 1;
+      margin-right: 20px; /* Added margin to prevent overlap */
     }
   </style>
 </head>
@@ -42,6 +47,7 @@
     </nav>
   </header>
   
+  <!-- About Me section with profile photo -->
   <section id="about" class="profile-section">
     <div class="about-me">
       <h2>About Me</h2>
@@ -51,15 +57,18 @@
       <p>I am always eager to collaborate with others on innovative projects and contribute my expertise to a dynamic team. Whether it's building robust web applications, managing servers, or exploring new programming paradigms, I am committed to delivering high-quality solutions and continuously expanding my knowledge.</p>
       <p>Thank you for visiting my website, and I look forward to the possibility of working together!</p>
     </div>
-    <img src="https://i.ibb.co/M1cv51B/profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+    <!-- Profile photo aligned to the right -->
+    <img src="https://i.ibb.co/M1cv51B" alt="Profile Photo" class="profile-photo">
   </section>
 
+  <!-- Social media links section -->
   <div class="social-media-links">
     <h3>My Social Media</h3>
     <a href="https://www.linkedin.com/in/yourlinkedinname/" target="_blank">LinkedIn</a>
     <a href="https://github.com/yourgithubusername" target="_blank">GitHub</a>
   </div>
   
+  <!-- Projects section with links to separate pages -->
   <section id="projects">
     <h2>Projects</h2>
     <ul>
@@ -68,6 +77,7 @@
     </ul>
   </section>
 
+  <!-- Collaborate button linking to contact page -->
   <section id="collaborate">
     <button onclick="location.href='contact.html'">Collaborate with Me</button>
   </section>
@@ -76,6 +86,7 @@
     <p>&copy; 2024 Ratna Kirti. All rights reserved.</p>
   </footer>
   
+  <!-- External JavaScript file -->
   <script src="scripts.js"></script>
 </body>
 </html>
