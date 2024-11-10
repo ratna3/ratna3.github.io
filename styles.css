@@ -11,14 +11,14 @@ body {
   background-color: #f0f0f0;
   color: #333;
   line-height: 1.6;
-  background: linear-gradient(to right, #f0f0f0, #dfe9f3, #ffffff); /* Adding gradient background */
+  background: linear-gradient(to right, #f0f0f0, #dfe9f3, #ffffff); /* Gradient background */
 }
 
 /* Header styles */
 header {
   background: #333;
   color: #fff;
-  padding: 1rem 0;
+  padding: 2rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -29,7 +29,7 @@ header h1 {
   font-size: 2.5rem;
   position: relative;
   display: inline-block;
-  animation: slideIn 3s infinite alternate;
+  animation: slideIn 3s forwards;
 }
 
 @keyframes slideIn {
@@ -65,24 +65,24 @@ section {
   margin: 2rem 0;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s; /* Adding hover effect */
+  transition: transform 0.3s;
 }
 
 section:hover {
-  transform: translateY(-10px); /* Elevation effect */
+  transform: translateY(-10px);
 }
 
 h2 {
   margin-bottom: 1rem;
   font-size: 2rem;
-  color: #1a73e8; /* Changing heading color */
+  color: #1a73e8;
   position: relative;
-  animation: bounceIn 1s infinite alternate;
+  animation: bounceIn 1s forwards;
 }
 
 @keyframes bounceIn {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.1); }
+  0% { transform: scale(0.5); }
+  100% { transform: scale(1); }
 }
 
 .project {
@@ -113,11 +113,11 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 4px;
-  transition: background 0.3s; /* Smooth transition */
+  transition: background 0.3s;
 }
 
 button:hover {
-  background: #155aab; /* Darker shade on hover */
+  background: #155aab;
 }
 
 /* Footer styles */
@@ -132,10 +132,10 @@ footer {
 
 /* Footer animated text */
 footer p {
-  animation: slideIn 3s infinite alternate-reverse;
+  animation: slideInFooter 3s forwards;
 }
 
-@keyframes slideIn {
+@keyframes slideInFooter {
   0% { transform: translateX(100%); }
   100% { transform: translateX(0); }
 }
